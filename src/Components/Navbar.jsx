@@ -3,14 +3,14 @@ import { NavLink } from "react-router";
 import userLogo from "../assets/user.png";
 const Navbar = () => {
   return (
-    <div className="flex">
+    <div className="flex justify-between">
       <div className=""></div>
-      <div className="nav text-accent flex items-center gap-5">
+      <div className="nav text-accent flex items-center gap-5 ml-42">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/career">Career</NavLink>
       </div>
-      <div className="login-btn flex items-center gap-3 ">
+      <div className="login-btn flex items-center gap-3">
         <img src={userLogo} alt="" />
         <button className="text-base-100 btn btn-primary px-10">Login</button>
       </div>
